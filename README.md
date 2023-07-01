@@ -9,14 +9,6 @@
 | Enzo Soares e Silva Cerávolo  |         |                          |
 | David Aaron Medeiro           |         |                          |
 
-- João Vinicius Farah Colombini
-- Victor Jorge Carvalho Chaves
-- Enzo Soares e Silva Cerávolo
-- David Aaron Medeiro
-
-<br>
-
-Primeiras Referencias ao projeto de CD
 
 https://circuitdigest.com/microcontroller-projects/solar-irradiance-mesurement-meter-using-arduino
 
@@ -41,11 +33,11 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 - **Sensor de Pressão** (utilizado em arduinos para medir a pressão em relação a objetos, assim a ideia é colocar 4 desses um em cada ponto médio de cada lado do dispositivo para medir a quantidade de pressão entre o dispositivo e o local onde o painel será instalado.
 
-## Funcionamento do Sistema
+# Funcionamento do Sistema
 
-### Entradas
-### Processamentos 
-### Saídas
+## **Entradas**
+## **Processamentos** 
+## **Saídas**
 
 	
 Em relação aos sensores de  radiação solar, ao atingirem certo nível de radiação mudam suas entradas de 0 para 1 e assim quando todos os sensores estiverem em 1 (porta AND) passam um sinal de saída X dizendo que aquele lugar recebe uma boa quantidade de radiação (esses sensores medem uma quantidade certa de radiação e somente assim mudam de 0 para 1).
