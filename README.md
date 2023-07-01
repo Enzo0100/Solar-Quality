@@ -1,6 +1,14 @@
 # Mini-ULA
 
-## Integrantes:
+# Grupo
+
+| Nome                          | RA      | Email                    |
+| ----------------------------- | ------- | ------------------------ |
+| João Vinicius Farah Colombini |         |                          |
+| Victor Jorge Carvalho Chaves  | 156.740 | victor.chaves@unifesp.br |
+| Enzo Soares e Silva Cerávolo  |         |                          |
+| David Aaron Medeiro           |         |                          |
+
 - João Vinicius Farah Colombini
 - Victor Jorge Carvalho Chaves
 - Enzo Soares e Silva Cerávolo
@@ -19,7 +27,7 @@ https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_7048
 https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
 
 
-## Descrição
+# Descrição
 
 A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos digitais de maneira teórica para obtenção da qualidade de um território para a instalação de painéis solares. Isto é verificar tanto a procedência da área a colocar os painéis e também se existe uma quantidade aceitável luminosidade solar.
 
@@ -35,18 +43,9 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 ## Funcionamento do Sistema
 
-## 
-
-```mermaid
-flowchart LR
-
-      A --- B;
-      A --- C;
-      B --- D;
-      C --- D;
-```
-
-
+### Entradas
+### Processamentos 
+### Saídas
 
 	
 Em relação aos sensores de  radiação solar, ao atingirem certo nível de radiação mudam suas entradas de 0 para 1 e assim quando todos os sensores estiverem em 1 (porta AND) passam um sinal de saída X dizendo que aquele lugar recebe uma boa quantidade de radiação (esses sensores medem uma quantidade certa de radiação e somente assim mudam de 0 para 1).
