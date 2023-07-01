@@ -8,16 +8,30 @@
 
 <br>
 
+Primeiras Referencias ao projeto de CD
+
+https://circuitdigest.com/microcontroller-projects/solar-irradiance-mesurement-meter-using-arduino
+
+https://www.extrica.com/article/21667
+
+https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf
+
+https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
+
+
 ## Descrição Básica:
 
 A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos digitais de maneira teórica para obtenção da qualidade de um território para a instalação de painéis solares. Isto é verificar tanto a procedência da área a colocar os painéis e também se existe uma quantidade aceitável em relação a radiação solar.
 
 ### Sensores utilizados serão (descrição básica):
-- **Sensor Solar** que mede radiação (existe tanto para arduino quanto um piranômetro, a ideia é usar uma quantidade razoável para arduino, assim medindo a quantidade de radiação solar na área para instalar um futuro painel solar);
+- **Sensor Solar** - [BH1750](https://imasters.com.br/desenvolvimento/como-funciona-o-sensor-de-luz-bh1750) : Mede a luminosidade ([lux ou lx](https://en.wikipedia.org/wiki/Lux)), para que assim seja convertida para $W/m²$ , ele tem uma resolução . Esse valor será um dos outputs do sistema, ao qual vamos delimitar um valor mínimo para ser considerado bom.
 - **Sensor de Vibração** (existe tanto um sobre vibrações no solo quando para vibração do ar no caso  para medir ventos fortes, o motivo deste é ver se o vento forte é forte o suficiente para danificar o aparelho a ser instalado para verificação e também sobre o futuro painel solar a ser instalado);
 - **Sensor de Pressão** (utilizado em arduinos para medir a pressão em relação a objetos, assim a ideia é colocar 4 desses um em cada ponto médio de cada lado do dispositivo para medir a quantidade de pressão entre o dispositivo e o local onde o painel será instalado.
 
 ### Entrada, Processamento e Saida
+
+
+
 	
 Em relação aos sensores de  radiação solar, ao atingirem certo nível de radiação mudam suas entradas de 0 para 1 e assim quando todos os sensores estiverem em 1 (porta AND) passam um sinal de saída X dizendo que aquele lugar recebe uma boa quantidade de radiação (esses sensores medem uma quantidade certa de radiação e somente assim mudam de 0 para 1).
 
