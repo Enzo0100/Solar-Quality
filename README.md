@@ -19,16 +19,31 @@ https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_7048
 https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
 
 
-## Descrição Básica:
+## Descrição
 
-A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos digitais de maneira teórica para obtenção da qualidade de um território para a instalação de painéis solares. Isto é verificar tanto a procedência da área a colocar os painéis e também se existe uma quantidade aceitável em relação a radiação solar.
+A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos digitais de maneira teórica para obtenção da qualidade de um território para a instalação de painéis solares. Isto é verificar tanto a procedência da área a colocar os painéis e também se existe uma quantidade aceitável luminosidade solar.
 
-### Sensores utilizados serão (descrição básica):
-- **Sensor Solar** - [BH1750](https://imasters.com.br/desenvolvimento/como-funciona-o-sensor-de-luz-bh1750) : Mede a luminosidade ([lux ou lx](https://en.wikipedia.org/wiki/Lux)), para que assim seja convertida para $W/m²$ , ele tem uma resolução . Esse valor será um dos outputs do sistema, ao qual vamos delimitar um valor mínimo para ser considerado bom.
+## Sensores Utilizados
+- **Sensor de Luminosidade** 
+    - Modelo : [BH1750](https://imasters.com.br/desenvolvimento/como-funciona-o-sensor-de-luz-bh1750)
+    - Função : Mede a luminosidade em [lux (ou lx)](https://en.wikipedia.org/wiki/Lux).
+    - Saída : 0 a 65535 (16 bits), que são em lux.
+
 - **Sensor de Vibração** (existe tanto um sobre vibrações no solo quando para vibração do ar no caso  para medir ventos fortes, o motivo deste é ver se o vento forte é forte o suficiente para danificar o aparelho a ser instalado para verificação e também sobre o futuro painel solar a ser instalado);
+
 - **Sensor de Pressão** (utilizado em arduinos para medir a pressão em relação a objetos, assim a ideia é colocar 4 desses um em cada ponto médio de cada lado do dispositivo para medir a quantidade de pressão entre o dispositivo e o local onde o painel será instalado.
 
-### Entrada, Processamento e Saida
+## Funcionamento do Sistema
+
+## 
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 
 
@@ -38,7 +53,7 @@ Em relação aos sensores de  radiação solar, ao atingirem certo nível de rad
 
 Os sensores de pressão e de vibração emitem saídas de perigo a possíveis danos em relação ao local onde será colocado o painel e sobre a qualidade de preservação do equipamento que mede essas condições (dispositivo criado pelo projeto), no geral apitam 3 leds, são eles:
 
-- Os sensores de pressão que vão de 1 a 0 pois estavam pressionados ao solo e por algum motivo foi identificado um problema na estabilidade estrutural na área onde o dispositivo está instalado.
+d- Os sensores de pressão que vão de 1 a 0 pois estavam pressionados ao solo e por algum motivo foi identificado um problema na estabilidade estrutural na área onde o dispositivo está instalado.
 - Os de vibrações fortes variam de 0 a 1. Apita outro led onde mostra que estão tendo ventos ou vibrações fortes o suficiente para danificar o aparelho e a futura instalação de painéis solares.
 - Os de radiação solar ficam em 0 e vão para 1 quando o sensor atinge um certo nível de radiação solar estimado para que aquele local seja apropriado para a instalação de um painel solar.
 
