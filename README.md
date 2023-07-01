@@ -38,10 +38,10 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ## 
 
 ```mermaid
-      A---B;
-      A---C;
-      B---D;
-      C---D;
+      A --- B;
+      A --- C;
+      B --- D;
+      C --- D;
 ```
 
 
