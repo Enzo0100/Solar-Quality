@@ -38,6 +38,8 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ## 
 
 ```mermaid
+flowchart LR
+
       A --- B;
       A --- C;
       B --- D;
