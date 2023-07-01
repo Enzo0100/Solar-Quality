@@ -22,7 +22,7 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
 
 ## [Irradiação (SI)](https://en.wikipedia.org/wiki/Irradiance#:~:text=The%20SI%20unit%20of%20irradiance,to%20confusion%20with%20radiant%20intensity)
 
-## Conversão de Lux para $W/m²$[^1]
+## Conversão de Lux para[^1] $W/m²$
 
 $$R = L \times 8 \times 10^{-5} $$
 $$L :\text{Luminosidade (lx ou lux)}$$
