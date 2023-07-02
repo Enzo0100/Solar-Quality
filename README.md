@@ -4,9 +4,9 @@
 
 | Nome                          | RA      | Email                    |
 | ----------------------------- | ------- | ------------------------ |
-| João Vinicius Farah Colombini | 159.501 | jvfcolombini@unifesp.br  |
+| João Vinicius Farah Colombini |         |                          |
 | Victor Jorge Carvalho Chaves  | 156.740 | victor.chaves@unifesp.br |
-| Enzo Soares e Silva Cerávolo  | 159.319 | enzo.ceravolo@unifesp.br |
+| Enzo Soares e Silva Cerávolo  |         |                          |
 | David Aaron Medeiro           |         |                          |
 
 
@@ -56,7 +56,8 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ```mermaid
 
 graph LR;
-    Sensor-->|0...65535|B;
+    Sensor-->|0...65535|Codificador;
+    Codificador-->|0...31|
 ```
 
 ## Saídas
