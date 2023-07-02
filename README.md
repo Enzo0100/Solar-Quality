@@ -20,9 +20,9 @@ https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
 
 # Fundamentos
 
-## [Irradiação (SI)](https://en.wikipedia.org/wiki/Irradiance#:~:text=The%20SI%20unit%20of%20irradiance,to%20confusion%20with%20radiant%20intensity)
+- ## [Irradiação (SI)](https://en.wikipedia.org/wiki/Irradiance#:~:text=The%20SI%20unit%20of%20irradiance,to%20confusion%20with%20radiant%20intensity)
 
-## Conversão de Lux para[^1] $W/m²$
+- ## [Conversão de Lux para $W/m²$](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
 
 $$R = L \times 8 \times 10^{-5} $$
 $$L :\text{Luminosidade (lx ou lux)}$$
@@ -36,12 +36,20 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ## **Sensores Utilizados**
 - **Sensor de Luminosidade** 
     - Modelo : [BH1750](https://imasters.com.br/desenvolvimento/como-funciona-o-sensor-de-luz-bh1750)
-    - Função : Mede a luminosidade em [lux (ou lx)](https://en.wikipedia.org/wiki/Lux).
+    - Função : Mede a luminosidade em [lux (simbolo lx)](https://en.wikipedia.org/wiki/Lux).
     - Saída : 0 a 65535 (16 bits), que são em lux.
+    - Saída Adaptada : 0 a 31 (5 bits), que são em $\frac{lx}{4096}$.
 
-- **Sensor de Vibração** (existe tanto um sobre vibrações no solo quando para vibração do ar no caso  para medir ventos fortes, o motivo deste é ver se o vento forte é forte o suficiente para danificar o aparelho a ser instalado para verificação e também sobre o futuro painel solar a ser instalado);
+- **Sensor de Vibração** 
+  - Modelo : [HEDRO-H1](https://www.hedro.com.br/wp-content/uploads/2020/08/Datasheet-HEDRO-H1-V2.pdf)
+  - Função : Medir Velocidade de Vibração ($mm/s$)
+  - Saída : 0 a 65535 (16 bits)
 
-- **Sensor de Pressão** (utilizado em arduinos para medir a pressão em relação a objetos, assim a ideia é colocar 4 desses um em cada ponto médio de cada lado do dispositivo para medir a quantidade de pressão entre o dispositivo e o local onde o painel será instalado.
+- **Sensor de Peso** 
+  - Modelo : [Célula de Carga](https://www.robocore.net/tutoriais/celula-de-carga-hx711-com-arduino)
+  - Função : Medir o peso sobre ele
+  - Saída : 0 até 50kg
+  - Saída Adaptada : 0 a 31 kg (5 bits)
 
 
 
@@ -51,8 +59,8 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 - ## Luminosidade Codificada 
 
-$$R = \text{Input} \div 21000$$
-$$R = \{0, 1, 2, 3\}$$
+$$R = \text{Input} \div 4096$$
+$$R = \{0, 1, 2, ..., 31\}$$
 
 ## **Processamentos** 
 
@@ -94,4 +102,16 @@ Fora isso essa lógica dos sensores de pressão funcionam igualmente para os de 
 (Uma outra opção viável seria utilizar outros tipos de sensores para medir áreas propícias para aplicação de “moinhos” de geração de energia eólica, apenas uma ideia).
 
 
-[^1] :  [Tési de Mestrado](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
+```mermaid
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+# Referências
+
+**Conversão de Lux para $W/m²$** : [Tese de Mestrado](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
+
