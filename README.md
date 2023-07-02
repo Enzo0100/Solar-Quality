@@ -16,9 +16,9 @@
 
 - ## [Conversão de Lux para $W/m²$](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
 
-$$R = L \times 8 \times 10^{-5} $$
+$$R = L \times 8$$
 $$L :\text{Luminosidade (lx ou lux)}$$
-$$R : \frac{kW}{m²} : \frac{\text{ kilo watts}}{\text{metro²}}$$
+$$R : \frac{mW}{m²} : \frac{\text{ mili watts}}{\text{metro²}}$$
 
 
 # Descrição
@@ -54,14 +54,14 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 - ### Calculo da Quantidade de Luminosidade
 
 ```mermaid
-
 graph LR; 
-    Sensor-->|0...65535|Codificador;
-    Codificador-->|0...31|mini-ULA-1
-    Codificador-->|0...31|mini-ULA-2
-    Codificador-->|0...31|mini-ULA-3
-    Codificador-->|0...31|mini-ULA-4
-    mini-ULA-1-->|x * 8|Display
+    sensor(Sensor de Temperatura)-->|0...65535|cod2(Codificador -11);
+    sensor(Sensor de Temperatura)-->|0...65535|cod(Codificar 3)
+    cod(Codificar 3)-->|x * 8|Output
+    cod2(Codificador -11)-->|0...31|mini-ULA-1
+    cod2(Codificador -11)-->|0...31|mini-ULA-2
+    cod2(Codificador -11)-->|0...31|mini-ULA-3
+    cod2(Codificador -11)-->|0...31|mini-ULA-4
     mini-ULA-2-->|x < 8|R1
     mini-ULA-3-->|x < 16|R2
     mini-ULA-4-->|x < 23|R3
