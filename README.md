@@ -57,7 +57,8 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 graph LR;
     Sensor-->|0...65535|Codificador;
-    Codificador-->|0...31|
+    Codificador-->|0...31|mini-ULA-1
+    mini-ULA-1-->|x * 8|dsa
 ```
 
 ## Saídas
