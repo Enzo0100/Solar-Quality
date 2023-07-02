@@ -1,4 +1,4 @@
-# Mini-ULA
+# SolarQuality
 
 # Grupo
 
