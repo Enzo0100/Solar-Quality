@@ -4,9 +4,9 @@
 
 | Nome                          | RA      | Email                    |
 | ----------------------------- | ------- | ------------------------ |
-| João Vinicius Farah Colombini | 159.319 | enzo.ceravolo@unifesp.br |
+| João Vinicius Farah Colombini | 159.501 | jvfcolombini@unifesp.br  |
 | Victor Jorge Carvalho Chaves  | 156.740 | victor.chaves@unifesp.br |
-| Enzo Soares e Silva Cerávolo  |         |                          |
+| Enzo Soares e Silva Cerávolo  | 159.319 | enzo.ceravolo@unifesp.br |
 | David Aaron Medeiro           |         |                          |
 
 
