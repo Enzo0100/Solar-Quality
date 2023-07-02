@@ -56,15 +56,14 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ```mermaid
 graph LR; 
     sensor(Sensor de Temperatura)-->|0...65535|cod2(Codificador -11);
-    sensor(Sensor de Temperatura)-->|0...65535|cod(Codificar 3)
-    cod(Codificar 3)-->|x * 8|Output
+    sensor(Sensor de Temperatura)-->|0...65535|cod(Codificador 3)
+    cod(Codificador 3)-->|x * 8|Output
     cod2(Codificador -11)-->|0...31|mini-ULA-1
     cod2(Codificador -11)-->|0...31|mini-ULA-2
     cod2(Codificador -11)-->|0...31|mini-ULA-3
-    cod2(Codificador -11)-->|0...31|mini-ULA-4
-    mini-ULA-2-->|x < 8|R1
-    mini-ULA-3-->|x < 16|R2
-    mini-ULA-4-->|x < 23|R3
+    mini-ULA-1-->|x < 8|R1
+    mini-ULA-2-->|x < 16|R2
+    mini-ULA-3-->|x < 23|R3
     R1-->Multiplexador
     R2-->Multiplexador
     R3-->Multiplexador
