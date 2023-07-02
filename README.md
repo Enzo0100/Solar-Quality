@@ -55,22 +55,32 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 ```mermaid
 
-graph LR;
+graph LR; 
     Sensor-->|0...65535|Codificador;
     Codificador-->|0...31|mini-ULA-1
-    mini-ULA-1-->|x * 8|mini-ULA-2
-    mini-ULA-1-->|x * 8|mini-ULA-3
-    mini-ULA-1-->|x * 8|mini-ULA-4
-    mini-ULA-1-->|x * 8|mini-ULA-5
+    Codificador-->|0...31|mini-ULA-2
+    Codificador-->|0...31|mini-ULA-3
+    Codificador-->|0...31|mini-ULA-4
+    mini-ULA-1-->|x * 8|Display
+    mini-ULA-2-->|x < 8|R1
+    mini-ULA-3-->|x < 16|R2
+    mini-ULA-4-->|x < 23|R3
+    R1-->Multiplexador
+    R2-->Multiplexador
+    R3-->Multiplexador
+    Multiplexador-->Ruim(Ruim : R1 * R2 * R3)
+    Multiplexador-->Fraco(Fraco : R1' * R2 * R3')
+    Multiplexador-->Moderado(Moderado : R1' * R2' * R3)
+    Multiplexador-->Bom(Bom : R1' * R2' * R3')
 ```
 
 ## Saídas
 
 - ### Qualidade da Luminosidade 
-  - Ruim : 0 a 25% do máximo
-  - Fraco : 25% a 50% do máximo
-  - Moderado : 50% a 75% do máximo
-  - Bom : 75% a 100% do máximo
+  - Ruim : 0 a 25% do máximo de luminosidade 
+  - Fraco : 25% a 50% do máximo de luminosidade 
+  - Moderado : 50% a 75% do máximo de luminosidade
+  - Bom : 75% a 100% do máximo de luminosidade
 
 - ### Qualidade de Instalação
   - Acender cada led referente ao pé, se ele estiver ruim.
