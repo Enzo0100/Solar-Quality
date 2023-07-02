@@ -50,13 +50,13 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 ## Processamento
 
+
+- ### Calculo da Quantidade de Luminosidade
+
 ```mermaid
 
 graph LR;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Sensor-->|0...65535|B;
 ```
 
 ## Saídas
