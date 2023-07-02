@@ -10,14 +10,6 @@
 | David Aaron Medeiro           |         |                          |
 
 
-https://circuitdigest.com/microcontroller-projects/solar-irradiance-mesurement-meter-using-arduino
-
-https://www.extrica.com/article/21667
-
-https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf
-
-https://pdf1.alldatasheet.com/datasheet-pdf/view/338083/ROHM/BH1750FVI.html
-
 # Fundamentos
 
 - ## [Irradiação (SI)](https://en.wikipedia.org/wiki/Irradiance#:~:text=The%20SI%20unit%20of%20irradiance,to%20confusion%20with%20radiant%20intensity)
@@ -58,6 +50,14 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 ## Processamento
 
+```mermaid
+
+graph LR;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
 ## Saídas
 
@@ -76,14 +76,6 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
   - Ruim : (Temperatura < 15ºC) ou (35ºC < Temperatura)
 
 	
-```mermaid
-
-graph LR;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
 
 # Referências
 
