@@ -100,7 +100,7 @@ graph LR;
     R2-->Decodificador
     R3-->Decodificador
     Decodificador-->Ruim(Ruim : R1 * R2 * R3)
-    Decodificador-->Fraco(Fraco : R1' * R2 * R3')
+    Decodificador-->Fraco(Fraco : R1' * R2 * R3)
     Decodificador-->Moderado(Moderado : R1' * R2' * R3)
     Decodificador-->Bom(Bom : R1' * R2' * R3')
 ```
