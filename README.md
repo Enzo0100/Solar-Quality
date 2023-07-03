@@ -50,6 +50,23 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 
 
 # Funcionamento do Sistema
+## Circuitos 
+
+- ### Codificador 3
+
+$$ A_{16} A_{15} \dots A_1 \Rightarrow A_{16} A_{15} \dots A_1 000$$
+
+- ### Codificador -11
+
+$$ A_{16} A_{15} \dots A_1 \Rightarrow A_{16} A_{15} A_{14} A_{13} A_{12}$$
+
+- ### Codificador
+
+$$R_1 R_2 + R_1 R_3 + R_1 R_4 + R_2 R_3 + R_2 R_4 + R_3 R_4$$
+$$+$$
+$$(R_1 + R_2 + R_3 + R_4) \times (R_5 + R_6 + R_7 + R_8)$$
+$$+$$
+$$R_5 R_6 + R_5 R_7 + R_5 R_8 + R_6 R_7 + R_6 R_8 + R_7 R_8$$
 
 ## Processamento
 
