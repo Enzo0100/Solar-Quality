@@ -69,6 +69,7 @@ $$ A_{16} A_{15} \dots A_1 \Rightarrow A_{16} A_{15} A_{14} A_{13} A_{12}$$
 | $\bar{A_1} \bar{A_2}$ | 0         | 0               | 0                     | 0               |
 | $\bar{A_1} A_2$       | 1         | 0               | 0                     | 0               |
 
+Formula Final: $A_1 A_2 A_3 + A_1 A_3 A_4 + A_2 A_3 A_4 + A_1 A_2 A_4 $
 
 - ### Codificador Par 2
 
