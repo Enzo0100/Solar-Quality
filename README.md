@@ -67,13 +67,13 @@ graph LR;
     mini-ULA-1-->|x < 8|R1
     mini-ULA-2-->|x < 16|R2
     mini-ULA-3-->|x < 23|R3
-    R1-->Multiplexador
-    R2-->Multiplexador
-    R3-->Multiplexador
-    Multiplexador-->Ruim(Ruim : R1 * R2 * R3)
-    Multiplexador-->Fraco(Fraco : R1' * R2 * R3')
-    Multiplexador-->Moderado(Moderado : R1' * R2' * R3)
-    Multiplexador-->Bom(Bom : R1' * R2' * R3')
+    R1-->Decodificador
+    R2-->Decodificador
+    R3-->Decodificador
+    Decodificador-->Ruim(Ruim : R1 * R2 * R3)
+    Decodificador-->Fraco(Fraco : R1' * R2 * R3')
+    Decodificador-->Moderado(Moderado : R1' * R2' * R3)
+    Decodificador-->Bom(Bom : R1' * R2' * R3')
 ```
 
 
@@ -81,22 +81,22 @@ graph LR;
 
 ```mermaid
 graph LR; 
-sensorA(Sensor 1)-->mini-ULA-1
-sensorB(Sensor 2)-->mini-ULA-2
-sensorC(Sensor 3)-->mini-ULA-3
-sensorD(Sensor 4)-->mini-ULA-4
-mini-ULA-1-->|x < 2|mini-ULA-5
-mini-ULA-2-->|x < 2|mini-ULA-6
-mini-ULA-3-->|x < 2|mini-ULA-7
-mini-ULA-4-->|x < 2|mini-ULA-8
-mini-ULA-1-->|x < 2|R1
-mini-ULA-2-->|x < 2|R2
-mini-ULA-3-->|x < 2|R3
-mini-ULA-4-->|x < 2|R4
-mini-ULA-5-->|x < 1|R5
-mini-ULA-6-->|x < 1|R6
-mini-ULA-7-->|x < 1|R7
-mini-ULA-8-->|x < 1|R8
+sensorA(Sensor 1)-->Comparador-1
+sensorB(Sensor 2)-->Comparador-2
+sensorC(Sensor 3)-->Comparador-3
+sensorD(Sensor 4)-->Comparador-4
+Comparador-1-->|x < 2|Comparador-5
+Comparador-2-->|x < 2|Comparador-6
+Comparador-3-->|x < 2|Comparador-7
+Comparador-4-->|x < 2|Comparador-8
+Comparador-1-->|x < 2|R1
+Comparador-2-->|x < 2|R2
+Comparador-3-->|x < 2|R3
+Comparador-4-->|x < 2|R4
+Comparador-5-->|x < 1|R5
+Comparador-6-->|x < 1|R6
+Comparador-7-->|x < 1|R7
+Comparador-8-->|x < 1|R8
 R1-->LED-1
 R2-->LED-2
 R3-->LED-3
