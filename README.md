@@ -87,8 +87,8 @@ $$R_5 R_6 + R_5 R_7 + R_5 R_8 + R_6 R_7 + R_6 R_8 + R_7 R_8$$
 
 ```mermaid
 graph LR; 
-    sensor(Sensor de Temperatura)-->|0...65535|cod2(Codificador -11);
-    sensor(Sensor de Temperatura)-->|0...65535|cod(Codificador 3)
+    sensor(Sensor de Luminosidade)-->|0...65535|cod2(Codificador -11);
+    sensor(Sensor de Luminosidade)-->|0...65535|cod(Codificador 3)
     cod(Codificador 3)-->|x * 8|Output
     cod2(Codificador -11)-->|0...31|mini-ULA-1
     cod2(Codificador -11)-->|0...31|mini-ULA-2
@@ -110,10 +110,10 @@ graph LR;
 
 ```mermaid
 graph LR; 
-sensorA(Sensor 1)-->Comparador-1
-sensorB(Sensor 2)-->Comparador-2
-sensorC(Sensor 3)-->Comparador-3
-sensorD(Sensor 4)-->Comparador-4
+sensorA(Célula de Carga A)-->Comparador-1
+sensorB(Célula de Carga B)-->Comparador-2
+sensorC(Célula de Carga C)-->Comparador-3
+sensorD(Célula de Carga D)-->Comparador-4
 Comparador-1-->|x < 2|Comparador-5
 Comparador-2-->|x < 2|Comparador-6
 Comparador-3-->|x < 2|Comparador-7
