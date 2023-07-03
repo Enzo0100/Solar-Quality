@@ -14,8 +14,11 @@
 
 - ## [Irradiação (SI)](https://en.wikipedia.org/wiki/Irradiance#:~:text=The%20SI%20unit%20of%20irradiance,to%20confusion%20with%20radiant%20intensity)
 
-- ## [Conversão de Lux para $W/m²$](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
 
+- ## [Resistencia de Calor da Placa Solar](https://www.eco-greenenergy.com/pt-pt/o-clima-afetara-a-eficiencia-do-painel-solar/#:~:text=Como%20todos%20sabemos%2C%20os%20pain%C3%A9is,durante%20o%20ver%C3%A3o%20e%20inverno.)
+
+- ## [Conversão de Lux para $W/m²$](https://fenix.tecnico.ulisboa.pt/downloadFile/1970719973966843/MasterThesis_70481.pdf)
+  
 $$R = L \times 8$$
 $$L :\text{Luminosidade (lx ou lux)}$$
 $$R : \frac{mW}{m²} : \frac{\text{ mili watts}}{\text{metro²}}$$
@@ -36,7 +39,7 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
   - Modelo : [LM35](https://blogmasterwalkershop.com.br/arduino/como-usar-com-arduino-sensor-de-temperatura-lm35)
   - Função : Medir Temperatura
   - Saída : 0 a 100 ºC
-  - Saída Adaptada : 0 a 63 ºC
+  - Saída Adaptada : 0 a 63 ºC (6 bits)
 
 - **Sensor de Peso** 
   - Modelo : [Célula de Carga](https://www.robocore.net/tutoriais/celula-de-carga-hx711-com-arduino)
@@ -51,7 +54,7 @@ A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos 
 ## Processamento
 
 
-- ### Calculo da Quantidade de Luminosidade
+- ### Calculo da Qualidade de Luminosidade
 
 ```mermaid
 graph LR; 
@@ -72,6 +75,43 @@ graph LR;
     Multiplexador-->Moderado(Moderado : R1' * R2' * R3)
     Multiplexador-->Bom(Bom : R1' * R2' * R3')
 ```
+
+
+- ### Verificação da Instalação
+
+```mermaid
+graph LR; 
+sensorA(Sensor 1)-->mini-ULA-1
+sensorB(Sensor 2)-->mini-ULA-2
+sensorC(Sensor 3)-->mini-ULA-3
+sensorD(Sensor 4)-->mini-ULA-4
+mini-ULA-1-->|x < 2|mini-ULA-5
+mini-ULA-2-->|x < 2|mini-ULA-6
+mini-ULA-3-->|x < 2|mini-ULA-7
+mini-ULA-4-->|x < 2|mini-ULA-8
+mini-ULA-1-->|x < 2|R1
+mini-ULA-2-->|x < 2|R2
+mini-ULA-3-->|x < 2|R3
+mini-ULA-4-->|x < 2|R4
+mini-ULA-5-->|x < 1|R5
+mini-ULA-6-->|x < 1|R6
+mini-ULA-7-->|x < 1|R7
+mini-ULA-8-->|x < 1|R8
+R1-->LED-1
+R2-->LED-2
+R3-->LED-3
+R4-->LED-4
+R1-->Codificador
+R2-->Codificador
+R3-->Codificador
+R4-->Codificador
+R5-->Codificador
+R6-->Codificador
+R7-->Codificador
+R8-->Codificador
+Codificador-->led(LED-W : 2 ou Mais R de 1 a 4.\n)
+```
+
 
 ## Saídas
 
