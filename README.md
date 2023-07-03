@@ -75,9 +75,13 @@ Formula Final: $A_1 A_2 + A_1 A_3 + A_1 A_4 + A_2 A_3 + A_2 A_4 + A_3 A_4$
 - ### Codificador
 
 $$R_1 R_2 + R_1 R_3 + R_1 R_4 + R_2 R_3 + R_2 R_4 + R_3 R_4$$
+
 $$+$$
+
 $$(R_1 + R_2 + R_3 + R_4) \times (R_5 + R_6 + R_7 + R_8)$$
+
 $$+$$
+
 $$R_5 R_6 + R_5 R_7 + R_5 R_8 + R_6 R_7 + R_6 R_8 + R_7 R_8$$
 
 ## Processamento
