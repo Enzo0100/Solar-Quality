@@ -79,7 +79,7 @@ Formula Final: $A_1 A_2 A_3 + A_1 A_3 A_4 + A_2 A_3 A_4 + A_1 A_2 A_4 $
 | $A_1 \bar{A_2}$       | 1         | 1               | 0                     | 1               |
 | $\bar{A_1} \bar{A_2}$ | 1         | 0               | 0                     | 0               |
 | $\bar{A_1} A_2$       | 1         | 1               | 0                     | 1               |
-
+0
 
 Formula Final: $A_1 A_2 + A_1 A_3 + A_1 A_4 + A_2 A_3 + A_2 A_4 + A_3 A_4$
 
@@ -154,7 +154,7 @@ R6-->Codificador
 R7-->Codificador
 R8-->Codificador
 Codificador-->LED-W
-LED-W---led(Dois ou Mais R de 1 a 4.\nOU\n Um R 5 a 8 e mais Qualquer R de 1 a 4.\nOU\n Dois ou mais de R 5 a 8.)
+LED-W---led(Três ou Mais R de 1 a 4.\nOU\n Um R 5 a 8 e mais Qualquer R de 1 a 4.\nOU\n Dois ou mais de R 5 a 8.)
 ```
 
 - ### Verificação da Temperatura
