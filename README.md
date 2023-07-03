@@ -85,7 +85,7 @@ Formula Final: $A_1 A_2 + A_1 A_3 + A_1 A_4 + A_2 A_3 + A_2 A_4 + A_3 A_4$
 
 - ### Codificador
 
-$$R_1 R_2 + R_1 R_3 + R_1 R_4 + R_2 R_3 + R_2 R_4 + R_3 R_4$$
+$$R_1 R_2 R_3 + R_1 R_3 R_4 + R_2 R_3 R_4 + R_1 R_2 R_4 $$
 
 $$+$$
 
