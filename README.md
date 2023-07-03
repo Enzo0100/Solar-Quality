@@ -109,7 +109,8 @@ R5-->Codificador
 R6-->Codificador
 R7-->Codificador
 R8-->Codificador
-Codificador-->led(LED-W : 2 ou Mais R de 1 a 4.\nOU\n Um R 5 a 8 e mais Qualquer R de 1 a 4.\nOU\n Dois ou mais de R 5 a 8.)
+Codificador-->LED-W
+LED-W---led(2 ou Mais R de 1 a 4.\nOU\n Um R 5 a 8 e mais Qualquer R de 1 a 4.\nOU\n Dois ou mais de R 5 a 8.)
 ```
 
 
