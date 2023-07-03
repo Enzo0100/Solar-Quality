@@ -142,6 +142,18 @@ Codificador-->LED-W
 LED-W---led(2 ou Mais R de 1 a 4.\nOU\n Um R 5 a 8 e mais Qualquer R de 1 a 4.\nOU\n Dois ou mais de R 5 a 8.)
 ```
 
+- ### Verificação da Temperatura
+
+```mermaid
+graph LR; 
+sensorA(Sensor 1)-->Comparador-1
+sensorA(Sensor 1)-->Comparador-2
+Comparador-1-->|x < 15|cod(Codificador Ava)
+Comparador-2-->|x > 35|cod(Codificador Ava)
+cod(Codificador Ava) --> LED-B
+LED-B --- text(Está Ruim)
+```
+
 
 ## Saídas
 
