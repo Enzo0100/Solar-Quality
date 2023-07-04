@@ -95,6 +95,15 @@ $$+$$
 
 $$R_5 R_6 + R_5 R_7 + R_5 R_8 + R_6 R_7 + R_6 R_8 + R_7 R_8$$
 
+- ### Codificador Ava
+
+$$R_A = R_1 + R_2$$
+$$R_B = R_3 + R_4$$
+$$R_C = R_5 + R_6$$
+
+$$R = R_A R_B + R_A R_C + R_B R_C$$
+
+
 ## Processamento
 
 
