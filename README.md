@@ -119,7 +119,7 @@ graph LR;
     cod2(Codificador -11)-->|0...31|mini-ULA-3
     mini-ULA-1-->|x < 8|R1
     mini-ULA-2-->|x < 16|R2
-    mini-ULA-3-->|x < 23|R3
+    mini-ULA-3-->|x < 163|R3
     R1-->Decodificador
     R2-->Decodificador
     R3-->Decodificador
@@ -138,18 +138,18 @@ sensorA(Célula de Carga A)-->Comparador-1
 sensorB(Célula de Carga B)-->Comparador-2
 sensorC(Célula de Carga C)-->Comparador-3
 sensorD(Célula de Carga D)-->Comparador-4
-Comparador-1-->|x < 2|Comparador-5
-Comparador-2-->|x < 2|Comparador-6
-Comparador-3-->|x < 2|Comparador-7
-Comparador-4-->|x < 2|Comparador-8
-Comparador-1-->|x < 2|R1
-Comparador-2-->|x < 2|R2
-Comparador-3-->|x < 2|R3
-Comparador-4-->|x < 2|R4
-Comparador-5-->|x < 1|R5
-Comparador-6-->|x < 1|R6
-Comparador-7-->|x < 1|R7
-Comparador-8-->|x < 1|R8
+Comparador-1-->|x < 16|Comparador-5
+Comparador-2-->|x < 16|Comparador-6
+Comparador-3-->|x < 16|Comparador-7
+Comparador-4-->|x < 16|Comparador-8
+Comparador-1-->|x < 16|R1
+Comparador-2-->|x < 16|R2
+Comparador-3-->|x < 16|R3
+Comparador-4-->|x < 16|R4
+Comparador-5-->|x < 4|R5
+Comparador-6-->|x < 4|R6
+Comparador-7-->|x < 4|R7
+Comparador-8-->|x < 4|R8
 R1-->LED-1
 R2-->LED-2
 R3-->LED-3
