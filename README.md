@@ -165,7 +165,17 @@ sensorA(Sensor 1)-->Comparador-1
 sensorA(Sensor 1)-->Comparador-2
 Comparador-1-->|x < 15|cod(Codificador Ava)
 Comparador-2-->|x > 35|cod(Codificador Ava)
-cod(Codificador Ava) --> LED-B
+sensorB(Sensor 2)-->Comparador-3
+sensorB(Sensor 2)-->Comparador-4
+Comparador-3-->|x < 15|cod(Codificador Ava)
+Comparador-4-->|x > 35|cod(Codificador Ava)
+sensorC(Sensor 3)-->Comparador-5
+sensorC(Sensor 3)-->Comparador-6
+Comparador-5-->|x < 15|cod(Codificador Ava)
+Comparador-6-->|x > 35|cod(Codificador Ava)
+
+
+cod(Codificador Ava) --> LED-A
 LED-B --- text(Está Ruim)
 ```
 
