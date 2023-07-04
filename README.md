@@ -183,7 +183,7 @@ sensorC(Sensor 3)-->Comparador-6
 Comparador-5-->|x < 15|cod(Codificador Ava)
 Comparador-6-->|x > 35|cod(Codificador Ava)
 cod(Codificador Ava) --> Contadores
-Contadores -->|x == 3?|LED-B
+Contadores -->|x == 3|LED-B
 
 ```
 
