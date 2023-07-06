@@ -28,6 +28,14 @@ $$R : \frac{mW}{m²} : \frac{\text{ mili watts}}{\text{metro²}}$$
 
 A partir da ODS 7 foi abstraída a ideia de desenvolver um projeto em circuitos digitais de maneira teórica para obtenção da qualidade de um território para a instalação de painéis solares. Isto é verificar tanto a procedência da área a colocar os painéis e também se existe uma quantidade aceitável luminosidade solar.
 
+O projeto em questão visa desenvolver um sistema de avaliação de qualidade para a instalação de painéis solares em determinados territórios. A ideia principal é utilizar circuitos digitais e sensores para verificar se uma determinada área é adequada para a instalação dos painéis solares, levando em consideração a quantidade de radiação solar disponível, a estabilidade do local e a presença de vibrações e ventos fortes que possam afetar o funcionamento dos painéis.
+
+Os sensores utilizados são de radiação solar, vibração e pressão. O sensor de radiação solar mede a quantidade de radiação solar na área e, quando atinge um determinado nível, indica que o local é apropriado para a instalação dos painéis solares. Os sensores de vibração e pressão são responsáveis por identificar possíveis problemas de estabilidade e danos causados por ventos fortes. Por exemplo, se houver vibrações intensas ou pressão excessiva entre o dispositivo e o local de instalação, o sistema emitirá um alerta indicando que o local pode não ser adequado.
+
+No sistema, são utilizadas portas lógicas, como portas AND e OR, para processar os dados dos sensores e emitir os resultados. Além disso, o projeto prevê o uso de LEDs como alarmes para indicar a presença de problemas, como instabilidade estrutural, ventos fortes ou radiação solar adequada. Dessa forma, o sistema fornece informações valiosas sobre a qualidade do território para a instalação de painéis solares.
+
+A aplicação do projeto é bastante ampla. Ele pode ser utilizado por empresas de energia renovável, instaladores de painéis solares e projetistas para selecionar as áreas mais adequadas e eficientes para a instalação dos painéis. Além disso, o sistema também pode ser aplicado em projetos de pesquisa e educação, proporcionando uma ferramenta prática para estudar e conscientizar sobre energia solar e sustentabilidade. Em suma, o projeto contribui diretamente para a promoção de energia limpa e sustentável, além de proporcionar uma avaliação precisa e eficiente para a instalação de painéis solares.
+
 ## **Sensores Utilizados**
 - **Sensor de Luminosidade** 
     - Modelo : [BH1750](https://imasters.com.br/desenvolvimento/como-funciona-o-sensor-de-luz-bh1750)
